@@ -27,11 +27,12 @@ This is a lightweight custom web browser built with **PyQt6** and integrated wit
 ---
 
 ## 🧪 Preview
-<img width="1366" height="768" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/a10eb165-c732-4b5b-b4ad-b6fea78baf2c" />
-<img width="1366" height="768" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/459973d4-5548-452e-a18a-30ec5fcc96a1" />
-<img width="1366" height="768" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/7b0fb039-9b4d-4397-9406-e310844551a8" />
-<img width="1366" height="768" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/7edd8196-31dd-470a-8791-b01ec91a8a37" />
 
+<img width="1095" height="601" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/bf50718f-e635-4c7c-91aa-d5ef0dd75b91" />
+
+<img width="1366" height="768" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/b8067570-f493-4d48-9ffa-b09bbe3687f8" />
+
+<img width="1099" height="566" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/0a5e2770-437c-4d30-9963-5821ae25ee5a" />
 ---
 
 ## 📦 Requirements
