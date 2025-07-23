@@ -11,7 +11,7 @@ This is a lightweight custom web browser built with **PyQt6** and integrated wit
 
 - 🧭 Basic browser navigation (Back, Forward, Refresh, Home)
 - 🌐 URL search bar
-- 🛡️ Tor proxy integration (SOCKS5 on port 9050 or 9055)
+- 🛡️ Tor proxy integration (SOCKS5 on port 9050 or 9055) --[ Downloaded from https://www.torproject.org ]--
 - ✅ Tor toggle with visual status (yellow = starting, original = active)
 - 🌈 Icon support for UI buttons
 - 🎨 Embedded welcome page with HTML + CSS styling
