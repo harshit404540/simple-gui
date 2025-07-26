@@ -11,8 +11,8 @@ This is a lightweight custom web browser built with **PyQt6** and integrated wit
 
 - 🧭 Basic browser navigation (Back, Forward, Refresh, Home)
 - 🌐 URL search bar
-- 🛡️ Tor proxy integration (SOCKS5 on port 9050 or 9055) --[ Downloaded from https://www.torproject.org ]--
-- ✅ Tor toggle with visual status (yellow = starting, original = active)
+- 🛡️ Tor proxy integration (SOCKS5 on port 9050) --[ Downloaded from https://www.torproject.org ]--
+- ✅ Tor toggle with visual status (yellow = starting/stopping, green = activated original = deactivated)
 - 🌈 Icon support for UI buttons
 - 🎨 Embedded welcome page with HTML + CSS styling
 
@@ -45,18 +45,6 @@ This is a lightweight custom web browser built with **PyQt6** and integrated wit
 ## Install dependencies:
 
 - pip install PyQt6 PyQt6-WebEngine
-
-## 🔧 Change Tor Port
-
-- step-1: Open the main.py file in any code editor.
-
-- step-2: Scroll to the second proxy function under the comment (# -------------- TOR --> 9055 ---------------------------------------).
-
-- step-3: Uncomment the entire second function block.
-
-- step-4: Comment out the original proxy function (the one under # -------------- TOR --> 9050 ---------------------------------------).
-
-- step-5: Save the file and rerun the browser.
 
 ## Cons
 
