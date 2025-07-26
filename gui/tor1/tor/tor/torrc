@@ -1,7 +1,0 @@
-SocksPort 9055
-ControlPort 9053
-CookieAuthentication 1
-MaxCircuitDirtiness 10
-DataDirectory /tor1/data
-GeoIPFile /tor1/data/geoip
-GeoIPv6File /tor1/data/geoip6
