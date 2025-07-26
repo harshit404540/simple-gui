@@ -137,9 +137,6 @@ class window:
          </html>
       """)
 
-
-   # -------------- TOR --> 9050 ---------------------------------------
-
    def proxy(self):
       if self.tor_process is None: 
          self.proxy_button.setStyleSheet("background-color: yellow;")
@@ -163,47 +160,12 @@ class window:
             self.tor_process.terminate()
             self.tor_process = None
          QTimer.singleShot(3000, self.tor_kill) 
-   
-   # -------------- TOR --> 9055 ---------------------------------------
 
-   """def proxy(self):
-      if self.tor_process is None: 
-         self.proxy_button.setStyleSheet("background-color: yellow;")
-         tor_path = os.path.abspath("tor1//tor//tor.exe")
-         torrc_path = os.path.abspath("tor1//tor//tor//torrc")
-         print("Starting Tor...")
-         self.tor_process = subprocess.Popen(
-            [tor_path, "-f", torrc_path],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            universal_newlines=True, 
-            bufsize=1 
-         )
-         self.tor_thread = threading.Thread(target=self.tor_output_9055, daemon=True)
-         self.tor_thread.start()
-
-      else:
-         if self.tor_process:
-            print("Terminating Tor...")
-            self.proxy_button.setStyleSheet("background-color: yellow;")
-            self.tor_process.terminate()
-            self.tor_process = None
-         QTimer.singleShot(3000, self.tor_kill) """
-   
    def tor_output_9050(self):
       for line in self.tor_process.stdout:
             print(line)
             if "100%" in line:
                proxy = QNetworkProxy(QNetworkProxy.ProxyType.Socks5Proxy, "127.0.0.1", 9050)
-               QNetworkProxy.setApplicationProxy(proxy)
-               self.proxy_button.setStyleSheet("background-color: green;")
-               print("Tor Proxy is set...")
-
-   def tor_output_9055(self):
-      for line in self.tor_process.stdout:
-            print(line)
-            if "100%" in line:
-               proxy = QNetworkProxy(QNetworkProxy.ProxyType.Socks5Proxy, "127.0.0.1", 9055)
                QNetworkProxy.setApplicationProxy(proxy)
                self.proxy_button.setStyleSheet("background-color: green;")
                print("Tor Proxy is set...")
